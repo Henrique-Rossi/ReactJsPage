@@ -39,7 +39,7 @@ export class Home extends Component {
 
 
   loadPosts = async () => {
-    const { page, postsPerPage } = this.state;
+    const { postsPerPage } = this.state;
 
     const postAndPhotos = await loadPosts();
     this.setState({
